@@ -15,6 +15,9 @@ body {
   left: 0;
 }
 
+button {
+  cursor: pointer;
+}
 /* navbar */
 #navbar {
   display: flex;
@@ -111,4 +114,127 @@ body {
   font-size: 16px;
   color: #666;
   margin-top: 10px;
+}
+
+/* CSS for the featured products section */
+
+/* CSS for the featured products section */
+#products {
+  text-align: center;
+  padding: 20px;
+}
+
+#products h2 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+#products p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#pro-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+#pro {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease; /* Adding transition for smooth hover effect */
+}
+
+#pro img {
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.des {
+  padding: 3px;
+  text-align: start;
+}
+
+.des span {
+  display: block;
+  font-size: 14px;
+  color: #888;
+}
+
+.des h5 {
+  font-size: 14px;
+  margin: 1px 0;
+}
+
+.des h4 {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.star {
+  font-size: 12px;
+  color: #f0a500;
+}
+.des a {
+  text-decoration: none;
+  color: rgb(15, 13, 13);
+}
+
+/* Hover effect */
+#pro:hover {
+  border-color: #65490b; /* Change border color on hover */
+  background-color: #f0f0f0; /* Change background color on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.des i {
+  margin-right: 2px;
+}
+.des .cart {
+  bottom: 15px;
+  right: 20px;
+  position: absolute;
+  border-radius: 50%;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(img/banner/b2.jpg);
+  color: white;
+  height: 40vh;
+}
+
+#banner h1 span {
+  color: #f0a500;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+#banner button {
+  background-color: white;
+  border: 4px;
+  padding: 14px 20px;
+  font-weight: 700;
+  color: black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#banner button:hover {
+  background-color: rgb(102, 133, 105);
+  color: white;
 }
