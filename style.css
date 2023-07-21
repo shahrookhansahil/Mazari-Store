@@ -46,11 +46,13 @@ button {
   height: 90vh;
   background-size: cover;
   background-image: url(img/hero4.png);
-  padding: 0 80px;
+  padding: 0 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 #hero h1 {
   color: rgb(105, 91, 91);
@@ -58,7 +60,6 @@ button {
 
 #hero h4 {
   color: rgb(109, 85, 85);
-  padding-bottom: px;
 }
 #hero button {
   background-image: url(img/button.png);
@@ -216,6 +217,8 @@ button {
   background-image: url(img/banner/b2.jpg);
   color: white;
   height: 40vh;
+  margin: 80px;
+  border-radius: 10px;
 }
 
 #banner h1 span {
@@ -237,4 +240,271 @@ button {
 #banner button:hover {
   background-color: rgb(102, 133, 105);
   color: white;
+}
+#sm-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  background-image: url(img/banner/b17.jpg);
+  min-width: 580px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 50vh;
+  padding: 30px;
+  border-radius: 10px;
+}
+#sm-banner .box2 {
+  background-image: url(img/banner/b10.jpg);
+}
+
+.banner-box h4 {
+  margin: 0px;
+}
+.banner-box button {
+  background-color: transparent;
+  border: 1px black solid;
+  padding: 14px 20px;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.banner-box button:hover {
+  background-color: #708778;
+}
+
+#banner3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 70px;
+}
+
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  background-image: url(img/banner/b7.jpg);
+  min-width: 29%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 30vh;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#banner3 h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+#banner3 h3 {
+  color: rgb(120, 38, 38);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+#banner3 .box2 {
+  background-image: url(img/banner/b4.jpg);
+}
+
+#banner3 .box3 {
+  background-image: url(img/banner/b18.jpg);
+}
+
+#newsLetter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(img/banner/b14.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: rgb(58, 16, 98);
+  margin: 20px 70px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+#newsLetter input,
+button {
+  height: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+#newsLetter button {
+  background-color: #80d288;
+}
+
+#newsLetter button:hover {
+  background-color: rgb(12, 161, 5);
+  color: white;
+}
+
+/* Style the footer section */
+
+#ftr {
+  margin: 10px 70px;
+}
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+
+.footer-content {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.intro,
+.social-media {
+  flex-basis: 48%;
+}
+
+.intro h3,
+.social-media h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.social-media li {
+  margin-right: 15px;
+}
+
+.social-media li:last-child {
+  margin-right: 0;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ccc;
+}
+#mobile {
+  display: none;
+}
+/* Responsive media queries for smaller devices */
+/* media quiery for tablets */
+
+@media (max-width: 768px) {
+  #hero {
+    background-image: url(img/hero1.png);
+    background-position: center;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    top: 75px;
+    right: -300;
+    height: 100vh;
+    width: 120px;
+    background-color: black;
+    padding: 10px;
+    transition: 0.5s;
+  }
+  #navbar.ace {
+    right: 0;
+  }
+  #navbar li {
+    padding: 10px 0;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    margin-right: 20px;
+    font-size: x-large;
+    cursor: pointer;
+  }
+  #mobile i:hover {
+    color: #f0a500;
+  }
+  #products h2 {
+    font-size: 28px;
+  }
+}
+
+/* media quiery for mobiles */
+
+@media (max-width: 477px) {
+  #hero {
+    margin-left: 15px;
+    background-size: cover;
+    margin-top: 10px;
+  }
+  #hero h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  #hero h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #hero p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f04f39;
+    font-weight: bold;
+  }
+  #hero button {
+    color: #f0f0f0;
+    background-color: #80d288;
+    padding: 10px 20px;
+  }
+  #banner {
+    height: 20vh;
+    width: 80%;
+    margin-left: 30px;
+  }
+  #banner h1 {
+    font-size: 16px;
+  }
+  #banner h4 {
+    margin-bottom: 2px;
+  }
 }
