@@ -378,6 +378,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .intro,
@@ -506,5 +507,65 @@ button {
   }
   #banner h4 {
     margin-bottom: 2px;
+  }
+
+  #banner3 {
+    display: flex;
+    flex-direction: column;
+  }
+  #sm-banner {
+    display: flex;
+    flex-direction: column;
+  }
+  #sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    min-width: 29%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 30vh;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    .banner-box {
+      margin: 10px;
+    }
+  }
+
+  .intro p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .text-div h2 {
+    font-size: 20px;
+  }
+  #pro img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  #pro-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+  .box {
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .box h3 {
+    font-size: 16px;
   }
 }
