@@ -2,6 +2,13 @@ body {
   margin: 0;
   padding: 0;
 }
+#heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 44px;
+}
 #header {
   display: flex;
   align-items: center;
@@ -471,6 +478,10 @@ button {
   #products h2 {
     font-size: 28px;
   }
+
+  #heading {
+    font-size: 30px;
+  }
 }
 
 /* media quiery for mobiles */
@@ -571,5 +582,9 @@ button {
   }
   .box h3 {
     font-size: 16px;
+  }
+
+  #heading {
+    font-size: 3px;
   }
 }
